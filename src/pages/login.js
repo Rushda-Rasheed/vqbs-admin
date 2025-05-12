@@ -13,7 +13,7 @@ export default function Login() {
     try {
       const response = await handleLogin({ email, password });
       if (response.success) {
-        router.push("/user/dashboard");
+        router.push("/admin/dashboard");
       } else {
         setIsError(true);
       }
